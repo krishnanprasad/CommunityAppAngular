@@ -1,0 +1,38 @@
+<h6 style="color:#575757">Filter By</h6>
+
+
+<form #FilterBoxForm="ngForm">
+  <div class="col-md-12 push-md-2 card boxshadowcard" style="padding:8px;">
+    <mat-form-field>
+      <mat-select placeholder="Type " [formControl]="toppings" multiple [(ngModel)]="selectedValue">
+        <mat-option *ngFor="let topping of FilterType" (click)="CheckAdding()" [value]="topping.type">{{topping.type}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    {{selectedValue}}
+    <!-- <div>
+    <label for="Type" class="SmallLabel">Type:</label>
+    <input type="text" class="form-controlAltered" [(ngModel)]="ModelFilterBox.Type" name="Type" id="Type">
+  </div> -->
+    <div>
+      <label for="Search" class="SmallLabel">Search:</label>
+      <input type="text" class="form-controlAltered" [(ngModel)]="ModelFilterBox.Search" name="Search" id="Search">
+    </div>
+    <div>
+      <label for="fromlocation" class="SmallLabel">From Location:</label>
+      <input type="text" class="form-controlAltered" [(ngModel)]="ModelFilterBox.FromLocation" name="fromlocation" id="fromlocation">
+    </div>
+    <div>
+      <label for="tolocation" class="SmallLabel">To Location:</label>
+      <input type="text" class="form-controlAltered" [(ngModel)]="ModelFilterBox.ToLocation" name="tolocation" id="tolocation">
+    </div>
+    <div>
+      <label for="time" class="SmallLabel">To Location:</label>
+      <input type="text" class="form-controlAltered" [(ngModel)]="ModelFilterBox.Time" name="time" id="time">
+    </div>
+    <div style="padding-top:5px;">
+      <input type="button" class="btn btn-primary btn-block" value="Search" />
+    </div>
+
+
+  </div>
+</form>

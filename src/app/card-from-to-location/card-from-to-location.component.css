@@ -1,0 +1,10 @@
+.FromToIcon{
+height: 18px;
+width: 18px;
+}
+
+.FromToSpan{
+    font-size: 12px;
+    color: #5f5f5f;
+    font-family: PostMessageFont1;
+}

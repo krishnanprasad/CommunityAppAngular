@@ -1,0 +1,19 @@
+<div class="d-flex feedbackgeneraldiv">
+  <div class="p-2 flex-fill">
+    <img (click)="AddLike(PostId)" class="GeneralFeedbackImageIcon" src="assets/Image/Icons/like0.png" name="likepost"/>
+    <span class="GeneralFeedbackImageSpan">{{PostLike}}</span>
+  </div>
+  <div class="p-2 flex-fill">
+    <img class="GeneralFeedbackImageIcon" src="assets/Image/Icons/comment0.png" name="commentpost"/>
+    <span class="GeneralFeedbackImageSpan">{{PostComment}}</span>
+  </div>
+  <div class="p-2 flex-fill">
+    <img class="GeneralFeedbackImageIcon" src="assets/Image/Icons/joining0.png" name="joiningPost"  />
+    <span class="GeneralFeedbackImageSpan">{{PostIntrest}}</span>
+  </div>
+  
+  <div class="p-2 flex-fill">
+      <img class="GeneralFeedbackImageIcon" src="assets/Image/Icons/downrate0.png" name="downrate0.png" />
+      <span class="GeneralFeedbackImageSpan">{{PostDownrate}}</span>
+    </div>
+</div>

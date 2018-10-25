@@ -1,0 +1,21 @@
+.notificationdiv{
+    padding: 5px;
+    font-family: PostMessageFont1;
+}
+
+.notifyfrom{
+    font-size: 12px;
+    color:#505050;
+    font-weight: 500;
+}
+.notifymessage{
+    font-size: 12px;
+    color: #969696;
+}
+
+.boxshadowcard {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+}
+
+

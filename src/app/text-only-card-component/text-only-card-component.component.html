@@ -1,0 +1,32 @@
+<div>
+
+  <div class="card boxshadowcard">
+    <!-- <div style="float:right">
+      <div [style.border-left-color]=getType(CardList.PostType)  class="PostTypeTag">
+        <span [style.color]=getType(CardList.PostType)  class="PostTypeTagSpan">{{(CardList.PostType)}}:{{CardList.Subject}}</span>
+      </div>
+    </div> -->
+    <card-header [Name]="CardList.UserName" [Image]="CardList.UserImage" [CommunityFrom]="CardList.CommunityFrom"></card-header>
+
+    <div class="card-bodyAltered">
+      <div style="text-align:center">
+        <span class="SubjectSpan" [style.color]=getType(CardList.PostType)>{{(CardList.PostType)}}:{{CardList.Subject}}</span>
+      </div>
+
+      <div style="text-align:center" *ngIf="CardList.ImageSrc!=''">
+        <img src={{CardList.ImageSrc}} style="max-width:220px;max-height:425px" />
+      </div>
+      <div style="margin:5px 0px">
+        <span class="MessageSpan">{{CardList.Message}}</span>
+      </div>
+      <div style="padding-left:10px" *ngIf="CardList.FromTime!='' && CardList.FromTime!=undefined">
+        <img class="FromTimeImg" src="assets/Image/Icons/clock0.png" />
+        <span class="FromTimeSpan">{{CardList.FromTime}}</span>
+      </div>
+
+      <from-to-location [FromLocation]="CardList.FromLocation" [ToLocation]="CardList.ToLocation"></from-to-location>
+    </div>
+    <feedback-general [PostID]="CardList.PostID" [PostLike]="CardList.postlike" [PostComment]="CardList.postcomment" [PostIntrest]="CardList.postintrest" [PostDownrate]="CardList.postdownrate"></feedback-general>
+    <comment-box [Name]="CardList.UserName" [Image]="CardList.UserImage" [CommunityFrom]="CardList.CommunityFrom" [Comment]="CardList.Comment"></comment-box>
+  </div>
+</div>

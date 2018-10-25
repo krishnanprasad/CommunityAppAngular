@@ -1,0 +1,19 @@
+.communitylist {
+    background-color: white;
+    color: slategrey;
+    border-left: 5px solid slategrey;
+    padding: 0px 0px 0px 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    min-height: 75px;
+    max-height: 100px;
+    word-wrap: break-word;
+    white-space: normal;
+    font-size: small;
+    min-width: 120px;
+}
+
+.boxshadowcardmini {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2px;
+}

@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+@font-face {
+    font-family: PostMessageFont;
+    src: url("/src/assets/Fonts/FiraSans-Regular.tff") format("truetype");
+}
+@font-face {
+    font-family: PostMessageFont1;
+    src: url("/src/assets/Fonts/Rubik-Medium.ttf") format("truetype");
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Roboto', sans-serif; }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Roboto', sans-serif; }

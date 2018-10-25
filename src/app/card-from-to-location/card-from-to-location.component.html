@@ -1,0 +1,10 @@
+<div class="d-flex justify-content-between">
+    <div class="p-2" style="text-align:left" *ngIf="FromLocation!='' && FromLocation!= undefined">
+      <img class="FromToIcon" src="assets/Image/Icons/pingreen.png" />
+      <span class="FromToSpan">{{FromLocation}}</span>
+    </div>
+    <div class="p-2" style="text-align:right" *ngIf="ToLocation!='' && ToLocation!= undefined">
+      <img class="FromToIcon" src="assets/Image/Icons/pinred.png" />
+      <span class="FromToSpan">{{ToLocation}}</span>
+    </div>
+  </div>

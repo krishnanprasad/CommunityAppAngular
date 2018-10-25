@@ -1,0 +1,16 @@
+<h6 style="color:#575757">Top Offering Community</h6>
+<div *ngFor="let Commulist of ComListOffering" class="col-md-12 " style="padding-right:2px;margin-top:2px;">
+  <div class="row" style="width:100%">
+    <div class="card col-md-12 boxshadowcardmini">
+      <div class='container2' style="margin-top:5px;margin-bottom:5px;">
+        <div style='margin-left:10px;'>
+          <span style="color:#575757">{{Commulist.CommunityName}}</span>
+          <span style="float:right;float: right;color: #295f7e;border: none;padding: 2px;font-weight:600">{{Commulist.Notification}}</span>
+          <!-- <div style="font-size:.6em">
+            <span class="#818181">{{Commulist.CommunityId}}</span>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

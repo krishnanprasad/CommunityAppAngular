@@ -1,0 +1,8 @@
+<div class="card notificationdiv boxshadowcard">
+    <div *ngFor="let notifylist of NotificationList" style="padding:2px 2px;">
+        
+        <img [src]=getImageSrc(notifylist.notifytype) style="height:16px;width:16px;margin-right:8px;" />
+        <span class="notifyfrom">{{notifylist.notifyfrom}}</span>
+        <span class="notifymessage"> {{notifylist.notifymessage}}</span>
+    </div>
+</div>

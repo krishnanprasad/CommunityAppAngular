@@ -1,0 +1,80 @@
+.ImageTxtCenter a {
+    display: inline-block;
+    vertical-align: top; /* Adjust if multi-line text */
+    margin: 8px;
+    padding: 5px;
+    flex: 1;
+    min-width: 90px;
+    color: #5f5f5f;
+    text-align: center;
+    text-decoration: none;
+}
+
+    .ImageTxtCenter a img {
+        display: block;
+        margin: auto;
+        border: 0;
+    }
+
+    .ImageTxtCenter a span {
+        display: block;
+        margin-top: 5px;
+        color: white;
+        font-size: 12px;
+        font-family: 'Kreon', serif;
+    }
+
+
+
+        .ImageTxtCenter a span:hover {
+            color: #460000;
+        }
+
+.ImageTxtCentertainer a:hover {
+    background: rgba(0,0,0,.3);
+}
+
+/* The following is just coloring and faux images */
+
+.ImageTxtCenter {
+    width: 100%;
+    background: rgb(23, 162, 184);
+    text-align: center;
+    flex: 0;
+}
+
+.ImageTxtCenter-img {
+    width: 30px;
+    height: 30px;
+}
+
+.WidgetB.hide {
+    display: none;
+}
+
+.headerlistdivimg {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+}
+
+.testimonial-group > .row {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+    .testimonial-group > .row > .col-sm-4 {
+        display: inline-block;
+        float: none;
+    }
+    .headerlistdiv {
+        
+        margin: 0 auto;
+        background-color: #5f5f5f;
+        padding: 10px;
+        border-radius: 50%;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+        height: 50px;
+        width: 50px;
+    }
