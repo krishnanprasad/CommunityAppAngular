@@ -1,0 +1,9 @@
+<form #createpostform="ngForm" novalidate (ngSubmit)="onSubmit()">
+  {{createpostform.form.invalid}}
+  <div class="form-group">
+    <label for="PostMessage">Message</label>
+    <input type="text" class="form-control" [class.is-invalid]="message.invalid && message.touched " name="PostMessage" required #message="ngModel" [(ngModel)]="createpostform.Message" />
+    {{message.invalid}}
+  </div>
+  <input type="submit" [disabled]="createpostform.form.invalid" value="Add Post" class="btn btn-primary" />
+</form>

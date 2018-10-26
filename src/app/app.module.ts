@@ -28,6 +28,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {CdkTableModule} from '@angular/cdk/table';
 import {CdkTreeModule} from '@angular/cdk/tree';
+
+import { CreatepostComponent } from './createpost/createpost.component';
+
+
 import {
   MatAutocompleteModule,
   MatBadgeModule,
@@ -65,6 +69,8 @@ import {
   MatTooltipModule,
   MatTreeModule,
 } from '@angular/material';
+
+
 
 @NgModule({
   exports: [
@@ -105,7 +111,8 @@ import {
     MatToolbarModule,
     MatTooltipModule,
     MatTreeModule,
-  ]
+  ],
+  declarations: []
 })
 export class DemoMaterialModule {}
 @NgModule({
@@ -131,6 +138,7 @@ export class DemoMaterialModule {}
     FilterBoxComponent,
     PostDetailsComponent,
     CommentBoxComponent,
+    CreatepostComponent,
   ],
   imports: [
     BrowserModule,
