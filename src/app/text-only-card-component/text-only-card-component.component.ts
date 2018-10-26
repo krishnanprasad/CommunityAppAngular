@@ -7,17 +7,17 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class TextOnlyCardComponentComponent {
 
-  
+
   public CardList;
   @Input() data;
   constructor() { }
 
   ngOnInit() {
     //this.CardList=[{Name:"Krishnan 0",Age:10},{Name:"Krishnan A",Age:12},{Name:"Krishnan B",Age:13}];
-    
-    console.log(this.data);
+
+
     this.CardList = this.data;
-    console.log("Text Only Card !!");
+
   }
 
   onClick() {
@@ -25,7 +25,7 @@ export class TextOnlyCardComponentComponent {
     alert('Hi');
   }
 
-  getType(Type) { 
+  getType(Type) {
     switch (Type) {
       case 'Offering':
         return '#00ad5d';

@@ -1,4 +1,4 @@
-import { Component, OnInit,Input } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'comment-box',
@@ -17,7 +17,7 @@ export class CommentBoxComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    
+
     this.Username = this.dataName;
     this.CommunityFrom = this.dataCommunityFrom;
     this.UserImage = this.dataUserImage;

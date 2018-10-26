@@ -1,5 +1,5 @@
-import { NgModule, Component } from '@angular/core'
-import { Routes, RouterModule } from '@angular/router'
+import { NgModule, Component } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
 import { CommunityComponent } from './community/community.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { WallPageComponent } from './wall-page/wall-page.component';
@@ -53,7 +53,7 @@ const routes: Routes = [
         component: PostDetailsComponent
     }
 
-]
+];
 
 @NgModule(
     {

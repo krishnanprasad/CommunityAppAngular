@@ -10,19 +10,17 @@ import { PostDetailsWallService } from '../post-details-wall.service';
   styleUrls: ['./wall-page.component.css']
 })
 export class WallPageComponent {
-  constructor(private _postwalllist:PostDetailsWallService) { }
- 
-  PostDetails=[];
+  constructor(private _postwalllist: PostDetailsWallService) { }
 
-  ngOnInit(){    
-    console.log("Wall Page Component 1");
-    
-    this.PostDetails=this._postwalllist.getpostwalllist();
+  PostDetails = [];
+
+  ngOnInit() {
+
+    this.PostDetails = this._postwalllist.getpostwalllist();
     console.log(this.PostDetails);
-  
+
   }
-  OnSetUserID(userid)
-  {
-    
+  OnSetUserID(userid) {
+
   }
 }

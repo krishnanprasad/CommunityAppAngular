@@ -9,7 +9,7 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./filter-box.component.css']
 })
 export class FilterBoxComponent implements OnInit {
-  FilterType: FilterTypes[] = [{ value: 1, type: "Request" }, { value: 2, type: "Offer" }, { value: 3, type: "Activity" }];
+  FilterType: FilterTypes[] = [{ value: 1, type: 'Request' }, { value: 2, type: 'Offer' }, { value: 3, type: 'Activity' }];
   ModelFilterBox = new ModelFilterBox('Offering', '', '', '', '', this.FilterType);
   toppings = new FormControl();
   toppingList: string[] = ['Extra cheese', 'Mushroom', 'Onion', 'Pepperoni', 'Sausage', 'Tomato'];

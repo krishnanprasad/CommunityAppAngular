@@ -13,23 +13,22 @@ export class FeedbackGeneralComponent implements OnInit {
   public PostDownrate;
   @Input('PostID') dataPostId;
   @Input('PostLike') dataPostLike;
-  @Input('PostComment') dataPostComment;  
+  @Input('PostComment') dataPostComment;
   @Input('PostIntrest') dataPostIntrest;
   @Input('PostDownrate') dataPostDownrate;
-  constructor() { 
-   
+  constructor() {
+
   }
 
   ngOnInit() {
-    this.PostId=this.dataPostId;
-    this.PostLike=this.dataPostLike;
-    this.PostComment=this.dataPostComment;
-    this.PostIntrest=this.dataPostIntrest;
-    this.PostDownrate=this.dataPostDownrate;
+    this.PostId = this.dataPostId;
+    this.PostLike = this.dataPostLike;
+    this.PostComment = this.dataPostComment;
+    this.PostIntrest = this.dataPostIntrest;
+    this.PostDownrate = this.dataPostDownrate;
   }
-  AddLike(PostId)
-  {
-    alert('Likes Added To Post Id'+PostId );
+  AddLike(PostId) {
+    alert('Likes Added To Post Id' + PostId);
   }
 
 }
